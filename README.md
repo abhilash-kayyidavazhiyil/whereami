@@ -25,3 +25,12 @@
     │   ├── CMakeLists.txt             # compiler instructions
     │   ├── package.xml                # package info                  
     └──   
+
+Build:
+catkin_make
+source devel/setup.bash
+roslaunch my_robot world.launch
+
+next terminal
+source devel/setup.bash
+roslaunch ball_chaser ball_chaser.launch
