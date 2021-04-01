@@ -1,52 +1,9 @@
 # SLAM map my world
 
-.whereami/
-├── CMakeLists.txt
-├── README.md
-├── ball_chaser
-│   ├── CMakeLists.txt
-│   ├── launch
-│   │   └── ball_chaser.launch
-│   ├── package.xml
-│   ├── src
-│   │   ├── drive_bot.cpp
-│   │   └── process_image.cpp
-│   └── srv
-│       └── DriveToTarget.srv
-├── images
-│   ├── Screenshot\ from\ 2021-04-01\ 11-23-18.png
-│   ├── Screenshot\ from\ 2021-04-01\ 11-27-45.png
-│   ├── Screenshot\ from\ 2021-04-01\ 11-27-57.png
-│   └── Screenshot\ from\ 2021-04-01\ 11-30-47.png
-└── my_robot
-    ├── CMakeLists.txt
-    ├── config
-    │   ├── base_local_planner_params.yaml
-    │   ├── costmap_common_params.yaml
-    │   ├── global_costmap_params.yaml
-    │   └── local_costmap_params.yaml
-    ├── launch
-    │   ├── amcl.launch
-    │   ├── localization.launch
-    │   ├── mapping.launch
-    │   ├── robot_description.launch
-    │   └── world.launch
-    ├── maps
-    │   ├── map.pgm
-    │   └── map.yaml
-    ├── meshes
-    │   └── hokuyo.dae
-    ├── package.xml
-    ├── rviz
-    │   └── config_file.rviz
-    ├── urdf
-    │   ├── my_robot.gazebo
-    │   └── my_robot.xacro
-    └── worlds
-        ├── ball.world
-        ├── ball_house.world
-        ├── build_my_world.world
-        └── empty.world
+Directory structure:
+
+Screen Shot 2021-04-01 at 12.04.59 PM![image](https://user-images.githubusercontent.com/16000838/113263567-fe33bd80-92e2-11eb-9497-796a4802b336.png)
+
 
 Build:
 ```
@@ -81,5 +38,10 @@ rtabmap-databaseViewer ~/.ros/rtabmap.db
 ```
 
 ## results
+
+IMG-20210401-WA0032.jpg![image](https://user-images.githubusercontent.com/16000838/113263432-d2b0d300-92e2-11eb-9b52-36f7f013593d.png)
+IMG-20210401-WA0033.jpg![image](https://user-images.githubusercontent.com/16000838/113263471-de9c9500-92e2-11eb-828e-eec4b5ca099e.png)
+IMG-20210401-WA0031.jpg![image](https://user-images.githubusercontent.com/16000838/113263486-e3f9df80-92e2-11eb-8cb6-93fca22d0bcd.png)
+IMG-20210401-WA0034.jpg![image](https://user-images.githubusercontent.com/16000838/113263491-e78d6680-92e2-11eb-8d7f-23dccb848d97.png)
 
 
