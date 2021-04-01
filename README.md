@@ -1,30 +1,52 @@
 # SLAM map my world
 
-    .map_my_world# Map My World Project
-    ├── my_robot     # my_robot package                   
-    │   ├── launc                                        # launch folder for launch files   
-    │   │   ├── robot_description.launch
-    │   │   ├── world.launch
-    │   ├── meshes                     # meshes folder for sensors
-    │   │   ├── hokuyo.dae
-    │   ├── urdf                       # urdf folder for xarco files
-    │   │   ├── my_robot.gazebo
-    │   │   ├── my_robot.xacro
-    │   ├── world                      # world folder for world files
-    │   │   ├── <yourworld>.world
-    │   ├── CMakeLists.txt             # compiler instructions
-    │   ├── package.xml                # package info
-    ├── ball_chaser                    # ball_chaser package                   
-    │   ├── launch                     # launch folder for launch files   
-    │   │   ├── ball_chaser.launch
-    │   ├── src                        # source folder for C++ scripts
-    │   │   ├── drive_bot.cpp
-    │   │   ├── process_images.cpp
-    │   ├── srv                        # service folder for ROS services
-    │   │   ├── DriveToTarget.srv
-    │   ├── CMakeLists.txt             # compiler instructions
-    │   ├── package.xml                # package info                  
-    └──   
+.whereami/
+├── CMakeLists.txt
+├── README.md
+├── ball_chaser
+│   ├── CMakeLists.txt
+│   ├── launch
+│   │   └── ball_chaser.launch
+│   ├── package.xml
+│   ├── src
+│   │   ├── drive_bot.cpp
+│   │   └── process_image.cpp
+│   └── srv
+│       └── DriveToTarget.srv
+├── images
+│   ├── Screenshot\ from\ 2021-04-01\ 11-23-18.png
+│   ├── Screenshot\ from\ 2021-04-01\ 11-27-45.png
+│   ├── Screenshot\ from\ 2021-04-01\ 11-27-57.png
+│   └── Screenshot\ from\ 2021-04-01\ 11-30-47.png
+└── my_robot
+    ├── CMakeLists.txt
+    ├── config
+    │   ├── base_local_planner_params.yaml
+    │   ├── costmap_common_params.yaml
+    │   ├── global_costmap_params.yaml
+    │   └── local_costmap_params.yaml
+    ├── launch
+    │   ├── amcl.launch
+    │   ├── localization.launch
+    │   ├── mapping.launch
+    │   ├── robot_description.launch
+    │   └── world.launch
+    ├── maps
+    │   ├── map.pgm
+    │   └── map.yaml
+    ├── meshes
+    │   └── hokuyo.dae
+    ├── package.xml
+    ├── rviz
+    │   └── config_file.rviz
+    ├── urdf
+    │   ├── my_robot.gazebo
+    │   └── my_robot.xacro
+    └── worlds
+        ├── ball.world
+        ├── ball_house.world
+        ├── build_my_world.world
+        └── empty.world
 
 Build:
 ```
