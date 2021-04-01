@@ -2,7 +2,7 @@
 
 Directory structure:
 
-Screen Shot 2021-04-01 at 12.04.59 PM![image](https://user-images.githubusercontent.com/16000838/113263567-fe33bd80-92e2-11eb-9497-796a4802b336.png)
+<img width="436" alt="Screen Shot 2021-04-01 at 12 16 09 PM" src="https://user-images.githubusercontent.com/16000838/113264513-1a842a00-92e4-11eb-819d-a0a98d745a0d.png">
 
 
 Build:
