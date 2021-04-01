@@ -1,8 +1,8 @@
-# whereami
+# SLAM map my world
 
-    .whereami# Where Am I Project
-    ├── my_robot                       # my_robot package                   
-    │   ├── launch                     # launch folder for launch files   
+    .map_my_world# Map My World Project
+    ├── my_robot     # my_robot package                   
+    │   ├── launc                                        # launch folder for launch files   
     │   │   ├── robot_description.launch
     │   │   ├── world.launch
     │   ├── meshes                     # meshes folder for sensors
@@ -27,16 +27,37 @@
     └──   
 
 Build:
-
+```
 catkin_make
 
 source devel/setup.bash
 
 roslaunch my_robot world.launch
-
+```
 
 next terminal
-
+```
 source devel/setup.bash
 
-roslaunch ball_chaser ball_chaser.launch
+roslaunch my_robot mapping.launch
+```
+
+next terminal
+```
+source devel/setup.bash
+
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+```
+
+## instructions
+- move the robot in the environment to create the Map
+
+View the created map
+
+```
+rtabmap-databaseViewer ~/.ros/rtabmap.db
+```
+
+## results
+
+
